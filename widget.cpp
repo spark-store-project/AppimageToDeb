@@ -159,9 +159,9 @@ void Widget::pack()
         lineStr = txtInput.readLine();  //读取数据
         if(lineStr.left(4)=="Exec"){
             if(ui->checkBox->isChecked()){
-                lineStr="Exec=/opt/durapps/a2d-packages/"+ctrl_Package+"/AppRun --no-sandbox";
+                lineStr="Exec=/opt/durapps/a2d-packages/"+ctrl_Package+"/AppRun";
             }else {
-                lineStr="Exec=/opt/durapps/a2d-packages/"+ctrl_Package+"/"+imageName+" --no-sandbox";//关联快捷
+                lineStr="Exec=/opt/durapps/a2d-packages/"+ctrl_Package+"/"+imageName;//关联快捷
             }
         }
         if(lineStr.left(4)=="Icon"){
